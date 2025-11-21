@@ -40,14 +40,14 @@ import com.example.arsitekturmvvm.R
 )
 @Composable
 fun FormIsian(
-    jenisJK: List<String>,
+    pilihanJK: List<String>,
     onSubmitBtnClick: (MutableList<String>) ->  Unit,
     modifier: Modifier = Modifier
 ){
     var txtNama by rememberSaveable { mutableStateOf("") }
     var txtAlamat by remember { mutableStateOf("") }
     var txtGender by remember { mutableStateOf("") }
-    
+    var listData: MutableList<String> = mutableListOf(txtNama,txtGender,txtAlamat)
 
     Scaffold (modifier = Modifier,
         {
