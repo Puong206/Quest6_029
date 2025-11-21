@@ -1,3 +1,5 @@
+@file:kotlin.OptIn(ExperimentalMaterial3Api::class)
+
 package com.example.arsitekturmvvm.view
 
 import androidx.annotation.OptIn
@@ -29,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import com.example.arsitekturmvvm.R
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class,
-    ExperimentalMaterial3Api::class
+    ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class
 )
 @Composable
 fun FormIsian(
