@@ -35,9 +35,12 @@ import com.example.arsitekturmvvm.R
 )
 @Composable
 fun FormIsian(
-    jenisK:List<String> = listOf("Laki-laki", "Perempuan"),
-    onSubmitBtnClick: () ->  Unit
+    jenisJK: List<String>,
+    onSubmitBtnClick: (MutableList<String>) ->  Unit,
+    modifier: Modifier = Modifier
 ){
+
+
     Scaffold (modifier = Modifier,
         {
             TopAppBar(
