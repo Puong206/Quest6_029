@@ -11,6 +11,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.arsitekturmvvm.model.DataJK.JenisK
 import com.example.arsitekturmvvm.view.FormIsian
 import com.example.arsitekturmvvm.view.TampilData
 import com.example.arsitekturmvvm.viewmodel.SiswaViewModel
@@ -35,6 +36,7 @@ fun DataApp(
             composable(route = Navigasi.Formulirku.name){
                 val konteks = LocalContext.current
                 FormIsian (
+                    pilihanJK = JenisK.map {id -> konteks.resources.getString(id)},
                     onSubmitBtnClick = {
                         navController.navigate(Navigasi.Detail.name)
                     }
