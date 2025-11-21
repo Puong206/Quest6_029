@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">NavigasiUI</string>
+    <string name="laki">Laki - Laki</string>
+    <string name="wanita">Wanita</string>
     <string name="submit">Submit</string>
     <string name="back">Back</string>
     <string name="nama_lengkap">NAMA LENGKAP</string>
