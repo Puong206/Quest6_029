@@ -38,6 +38,7 @@ fun DataApp(
                 FormIsian (
                     pilihanJK = JenisK.map {id -> konteks.resources.getString(id)},
                     onSubmitBtnClick = {
+                        viewModel.setSiswa(it)
                         navController.navigate(Navigasi.Detail.name)
                     }
                 )
